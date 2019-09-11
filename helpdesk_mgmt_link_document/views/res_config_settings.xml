@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
 
-    <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
-      <field name="name">res.config.settings.view.form.inherit</field>
+    <record id="res_config_settings_view_form_inherit_helpdesk" model="ir.ui.view">
+      <field name="name">res.config.settings.view.form.inherit.helpdesk</field>
       <field name="model">res.config.settings</field>
+      <field name="priority" eval="30"/>
       <field name="inherit_id" ref="base.res_config_settings_view_form"/>
       <field name="arch" type="xml">
         <xpath expr="//div[hasclass('settings')]" position="inside">
@@ -32,5 +32,4 @@
         </xpath>
       </field>
     </record>
-  </data>
-</odoo>
+  </odoo>
